@@ -1,0 +1,114 @@
+@import url("/assets/style/base.css");
+ul {
+  list-style-type: none;
+}
+body {
+  padding: 50px;
+  position: relative;
+}
+
+.link {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.link::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--hover);
+  transition: all 0.3s ease-in-out;
+}
+.link:hover::before {
+  width: 100%;
+}
+.link:hover {
+  color: var(--hover);
+}
+
+input {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+input:focus {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+}
+
+button {
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.3rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  margin: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--primary);
+  opacity: 0.95;
+  transition: all 0.3s ease-in-out;
+}
+.header:hover {
+  opacity: 1;
+}
+
+.header .navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .navbar ul li img {
+  width: 150px;
+}
+
+.header .navbar ul li a {
+  font-size: 1.5rem;
+}
+
+/* main */
+.main {
+  background-color: var(--secondary);
+  padding: 50px;
+  margin-bottom: 50px;
+}
+.introduce {
+  display: flex;
+  flex-direction: row;
+}
+.parent {
+}
+
+.gallery {
+  background-color: var(--primary);
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.gallery img {
+  height: 500px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  background-color: var(--primary);
+}

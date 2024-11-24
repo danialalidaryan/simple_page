@@ -1,0 +1,21 @@
+/* Fonts for texts */
+
+@font-face {
+  font-family:'B Yagut';
+  src: url('/assets/fonts/B Yagut_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'Yekan';
+  src: url('/assets/fonts/Yekan.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'Shabnam';
+  src: url('/assets/fonts/SHABNAM-MEDIUM.TTF') format('truetype');
+}
+
+@font-face {
+  font-family:'Lovelo';
+  src: url('/assets/fonts/Lovelo_Line_Bold.otf');
+}

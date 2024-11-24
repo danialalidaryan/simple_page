@@ -1,0 +1,18 @@
+@import url(/assets/fonts/fonts.css);
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Yekan', 'Shabnam', 'Lovelo', 'Yaqut', Arial, sans-serif;
+}
+a,p,h1,h2,h3,h4,h5,h6,b,strong {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+:root{
+  /* Colors */
+  --primary: #293241;
+  --secondary: #182445;
+  --hover: #f72585;
+}
